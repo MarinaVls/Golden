@@ -1,0 +1,242 @@
+@media (max-width:910px), (max-width:768px), (max-width:730px){
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section .container > h2 {
+        margin-bottom: 10px;
+    }
+    
+    .section .container >  p {
+        margin-bottom: 40px;
+    }
+
+    .nav__toggle {
+        display: inline-block;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    #nav__toggle:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        opacity: .9;
+
+        padding: 5%;
+        min-width: 200px;
+        height: 100%;
+    }
+
+    .nav li:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .form__wrapper {
+        display: block;
+    }
+
+    .about__us__item {
+        width: 100%;
+    }
+
+    .about__us__item:nth-child(even) {
+        border-left: none;
+    }
+
+    .about__us__item:not(:last-child) {
+        padding-bottom: 50px;
+    }
+
+    .about__us__item:not(:last-child):nth-child(odd) {
+        border-right: none;
+    }
+
+    .about__us__item:not(:last-child):nth-child(odd) img {
+        margin-right: 0;
+    }
+
+    .about__us__item:nth-child(even) img {
+        margin-left: 0;
+    }
+
+    .logo__wrapper {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .logo__wrapper a:not(:nth-child(n+4)) {
+        margin-bottom: 20px;
+    }
+
+    .info {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+
+    .footer__wrapper {
+        width: 80%;
+    }
+
+}
+
+@media (max-width:630px) {
+
+    .portfolio__list {
+        justify-content: center;
+    }
+
+    .portfolio__item {
+        margin-bottom: 50px;
+    }
+
+    .team__list {
+        flex-direction: column;
+    }
+
+    .team__item {
+        width: auto;
+    }
+
+    .team__text {
+        width: auto;
+    }
+
+    .logo__wrapper a:not(:last-child) {
+        margin-right: 15px;
+    }
+
+    .logo__wrapper a:not(:nth-child(n+4)) {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:470px), (max-width:425px), (max-width:424px) {
+
+    .header__promo__text {
+        font-size: 30px;
+    }
+
+    .header__promo h2 {
+        font-size: 52px;
+    }
+ 
+    .services__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .portfolio__list {
+        justify-content: center;
+    }
+    
+    .portfolio__item {
+        margin-bottom: 50px;
+    }
+    
+    .about__us__item,
+    .about__us__item:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .about__us__item:not(:last-child) {
+        padding-bottom: 30px;
+    }
+
+    .about__us__item:nth-child(even) .description,
+    .description {
+        text-align: center;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .team__list {
+        flex-direction: column;
+    }
+
+    .team__item {
+        width: 100%;
+    }
+
+    .team__text {
+        width: 100%;
+    }
+
+    .logo__wrapper, 
+    .logo__wrapper a{
+        display: block;  
+        height: 100%;
+        text-align: center;
+    }
+
+    .logo__wrapper a:first-child {
+        margin-top: 10px;
+    }
+
+    .logo__wrapper a:last-child {
+        margin-bottom: 10px;
+    }
+
+    .logo__wrapper a:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .info input {
+        max-width: 250px;
+    }
+
+    .message textarea {
+        max-width: 250px;
+        max-height: 150px;
+    }
+
+    .footer__wrapper {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer__caption {
+        margin-bottom: 5px;
+    }
+
+    .footer__social {
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width:320px) {
+
+    .section .container > h2 {
+        font-size: 30px;
+    }
+
+    .portfolio__item img {
+        width: 200px;
+    }
+
+    .portfolio__item .title {
+        padding: 20px 0;
+    }
+    .footer__caption {
+        font-size: 13px;
+    }
+}
